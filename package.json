@@ -1,0 +1,33 @@
+{
+  "name": "vue-provider",
+  "version": "0.0.0",
+  "description": "Expose any props you pass to be used in provide/inject.",
+  "repository": {
+    "url": "egoist/vue-provider",
+    "type": "git"
+  },
+  "main": "dist/index.common.js",
+
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo 'no tests!' && npm run lint",
+    "lint": "xo",
+    "prepublish": "npm run build",
+    "build": "bili --filename index --format umd,cjs --compress umd --module-name Provider"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "eslint-config-rem": "^3.0.0",
+    "xo": "^0.18.0",
+    "bili": "^0.17.0"
+  },
+  "xo": {
+    "extends": "rem"
+  }
+}
