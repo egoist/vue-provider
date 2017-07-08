@@ -1,13 +1,12 @@
 {
   "name": "vue-provider",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Expose any props you pass to be used in provide/inject.",
   "repository": {
     "url": "egoist/vue-provider",
     "type": "git"
   },
   "main": "dist/index.common.js",
-
   "files": [
     "dist"
   ],
@@ -19,9 +18,7 @@
   },
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint-config-rem": "^3.0.0",
     "xo": "^0.18.0",
