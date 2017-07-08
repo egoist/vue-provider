@@ -27,7 +27,7 @@ const Root = {
 }
 
 const Child = {
-  inject: ['msg']
+  inject: ['msg'],
   render() {
     return <button>{this.msg}</button>
   }
