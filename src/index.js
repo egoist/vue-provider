@@ -8,7 +8,7 @@ export default {
       provide() {
         return this.$props
       },
-      render(h) {
+      render() {
         return this.$slots.default[0]
       }
     }
