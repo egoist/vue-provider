@@ -9,7 +9,7 @@ export default {
         return this.$props
       },
       render(h) {
-        return h(this.$slots.default[0])
+        return this.$slots.default[0]
       }
     }
     return h(Provider, { props: ctx.props }, ctx.children)
