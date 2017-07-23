@@ -1,9 +1,9 @@
-export default {
+export const createProvider = (name = 'Provider') => ({
   functional: true,
   render(h, ctx) {
     const propNames = Object.keys(ctx.props)
     const Provider = {
-      name: 'provider',
+      name,
       props: propNames,
       provide() {
         return this.$props
@@ -14,4 +14,6 @@ export default {
     }
     return h(Provider, { props: ctx.props }, ctx.children)
   }
-}
+})
+
+export default createProvider()

@@ -45,6 +45,16 @@ It renders:
 <button>hello</button>
 ```
 
+### Create provider
+
+By default the Provider component name is `Provider`, however you can use a custom one:
+
+```js
+import { createProvider } from 'vue-provider'
+
+const ThemeProvider = createProvider('ThemeProvider')
+```
+
 ## Contributing
 
 1. Fork it!

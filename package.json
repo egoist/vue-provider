@@ -16,7 +16,7 @@
     "test": "echo 'no tests!' && npm run lint",
     "lint": "xo",
     "prepublish": "npm run build",
-    "build": "bili --format umd,cjs --compress umd --module-name Provider"
+    "build": "bili --exports named --format umd,cjs --compress umd --module-name Provider"
   },
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",
