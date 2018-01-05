@@ -52,7 +52,7 @@ By default the Provider component name is `Provider`, however you can use a cust
 ```js
 import { createProvider } from 'vue-provider'
 
-const ThemeProvider = createProvider('ThemeProvider')
+const ThemeProvider = createProvider('ThemeProvider', props)
 ```
 
 ## Contributing

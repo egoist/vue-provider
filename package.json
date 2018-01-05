@@ -6,27 +6,32 @@
     "url": "egoist/vue-provider",
     "type": "git"
   },
-  "main": "dist/vue-provider.common.js",
+  "main": "dist/vue-provider.cjs.js",
   "unpkg": "dist/vue-provider.js",
   "cdn": "dist/vue-provider.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "test": "echo 'no tests!' && npm run lint",
+    "test": "npm run lint && tyu",
     "lint": "xo",
-    "prepublish": "npm run build",
-    "build": "bili --exports named --format umd,cjs --compress umd --module-name Provider"
+    "prepublishOnly": "npm run build",
+    "build": "bili --name vue-provider --exports named --format umd,cjs,umd-min --module-name Provider"
   },
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
+    "bili": "^1.3.7",
     "eslint-config-rem": "^3.0.0",
-    "xo": "^0.18.0",
-    "bili": "^0.17.0"
+    "eslint-plugin-vue": "^4.0.1",
+    "tyu": "^1.0.5",
+    "vue": "^2.5.13",
+    "vue-template-compiler": "^2.5.13",
+    "vue-test-utils": "^1.0.0-beta.9",
+    "xo": "^0.18.0"
   },
   "xo": {
-    "extends": "rem"
+    "extends": ["rem", "plugin:vue/essential"],
+    "envs": ["jest"]
   }
 }
