@@ -9,4 +9,4 @@ export const createProvider = (name = 'Provider', props) => ({
   }
 })
 
-export default createProvider()
+export const Provider = createProvider()

@@ -16,7 +16,7 @@
     "test": "npm run lint && tyu",
     "lint": "xo",
     "prepublishOnly": "npm run build",
-    "build": "bili --name vue-provider --exports named --format umd,cjs,umd-min --module-name Provider"
+    "build": "bili --name vue-provider --exports named --format umd,cjs,umd-min --module-name provider"
   },
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",

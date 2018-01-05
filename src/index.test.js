@@ -1,5 +1,5 @@
 import { mount } from 'vue-test-utils'
-import Provider from './'
+import { Provider } from './'
 
 test('main', () => {
   const App = {

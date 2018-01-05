@@ -16,7 +16,7 @@ yarn add vue-provider
 
 ```js
 import Vue from 'vue'
-import Provider from 'vue-provider'
+import { Provider } from 'vue-provider'
 
 const Root = {
   render() {
